@@ -24,6 +24,14 @@ h1 {
   color: #272044;
 }
 
+.form-container {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
+
 form {
   padding: 30px;
   background-color: white;
@@ -31,6 +39,13 @@ form {
   border-radius: 10px;
   display: flex;
   margin-bottom: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
 }
 
 .instructions {
@@ -67,8 +82,22 @@ form {
   color: #885df1;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
